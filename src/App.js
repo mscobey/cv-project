@@ -42,7 +42,6 @@ getEducation = (education) =>{
     this.setState({
         educations:newEducation
     });
-    console.log(newEducation);
 }
 
 getWork = (work) =>{
@@ -51,7 +50,6 @@ getWork = (work) =>{
   this.setState({
       works:newWork
   });
-  console.log(newWork);
 }
 getSkill = (skill) =>{
   const {skills} = this.state;
@@ -59,7 +57,6 @@ getSkill = (skill) =>{
   this.setState({
       skills:newSkill
   });
-  console.log(newSkill);
 }
 
 showDelete = () =>{
@@ -219,9 +216,9 @@ deleteSkillClick = (id)=>{
           </div>
         </div>
         <div class="position-fixed bottom-0 start-50 translate-middle-x">
-          
-          <FontAwesomeIcon style={{cursor:'pointer'}} icon={faGithub} />
-          
+          <a href='https://github.com/mscobey/cv-project'>
+            <FontAwesomeIcon size="2x" style={{cursor:'pointer'}} icon={faGithub} />
+          </a>
         </div>
       </div>
     );
